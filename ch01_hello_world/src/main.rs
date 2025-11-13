@@ -5,7 +5,7 @@ fn main() {
     console_error_panic_hook::set_once();
 
     let html = "<p>This HTML will be injected.</p>";
-    log::info!("Hello world!!");
+    log::info!("Hello world!!"); // print log in console of browser.
     leptos::mount::mount_to_body(move || {
         view! {
             <div class="container">
