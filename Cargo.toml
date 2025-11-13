@@ -1,0 +1,13 @@
+[package]
+name = "leptos-notebook"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["ch01_hello_world"]
+
+[workspace.dependencies]
+console_error_panic_hook = "0.1.7"
+console_log = "1.0.0"
+leptos = { version = "0.8.12", features = ["csr"] }
+log = "0.4.28"

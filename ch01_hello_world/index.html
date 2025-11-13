@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    see: https://trunkrs.dev/assets/
+    1. 一定要加 `data-trunk`，才會被 trunk 處理。
+    2. href 是源始碼放的位置，data-target-path 是指放在 dist 後的路徑位置。
+    -->
+    <link data-trunk rel="rust" data-wasm-opt="z" />
+    <!-- 最後轉譯成 <link rel="stylesheet" href="/css/bootstrap.min-5d84e8a762ca253e.css" crossorigin="anonymous" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"/> -->
+    <link data-trunk rel="css" data-target-path="css" href="/static/css/bootstrap.min.css" crossorigin="anonymous" />
+    <title>Leptos Ch01 Hello World</title>
+  </head>
+  <body>
+    <!-- 最後轉譯成 <script src="/js/bootstrap.bundle.min-5f52014d8f138504.js" crossorigin="anonymous" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"></script> -->
+    <script data-trunk data-target-path="js" src="/static/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
